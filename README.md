@@ -3,6 +3,8 @@ Spectrum Router Default Password Wordlist
 
 This word list combines thousands of adjectives with thousands of nouns for a total of 11,215,122 combined words. With hashcat you can add in every combination of 3 digits after each combined word with ?d?d?d
 
+The trimmed version removes any words with hypens and also naughty words, which should/would not be included in default Spectrum router passwords.
+
 The final hashcat command would look something like this:
 
 hashcat -m 22000 -a 6 wifihash.txt SpectrumSniper.txt ?d?d?d 
